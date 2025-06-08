@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Vexi</title>
   <link rel="icon" type="image/gif" href="Vexigif.gif" />
-  <style>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <style>
+    html {
+      height: 100%;
+    }
     :root {
       --bg-color: linear-gradient(to bottom, #000000, #0a0a23);
       --text-color: #fff;
@@ -19,6 +23,7 @@
       margin: 0;
       padding: 2rem;
       transition: background 0.3s, color 0.3s;
+      min-height: 100vh;
     }
 
     .container {
@@ -64,6 +69,46 @@
       border: 2px solid var(--text-color);
     }
 
+    .section > h3 {
+      text-align: center !important;
+      margin-top: 0;
+    }
+
+    .socials {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .social-icons {
+      color: var(--text-color); 
+      text-decoration: none;    
+      font-size: 48px;
+      transition: all 0.4s ease-out;
+    }
+    
+    .social-icons-container {
+      display: flex;             
+      justify-content: center;  
+      align-items: center;      
+      gap: 25px;                 
+      margin-top: 15px;
+      width: 100%    
+    }
+    .social-icon .fab { 
+    color: var(--text-color); 
+    transition: color 0.4s ease-in-out; 
+    }
+
+    .social-icon .fa-twitch:hover {
+      color: #9147FF; 
+      transform: scale(1.0); 
+    }
+
+    .social-icon .fa-tiktok:hover {
+      color: #69C9D0; 
+      transform: scale(1.0); 
+    }
+
     @media (max-width: 600px) {
       .profile-header {
         flex-direction: column;
@@ -83,12 +128,12 @@
 
       .profile-header h1 {
         margin: 10px;
-        text-align: center:
+        text-align: center;
       }
 
       .profile-header h2 {
         text-align: center;
-        margin: 0:
+        margin: 0;
       }
     }
   </style>
@@ -114,12 +159,15 @@
         <li> love using chatGPT for stupid projects like this </li>
       </ul>
     </div>
-
-    <div class="section">
-      <h3>Socials</h3>
-      <p>You can find me on these platforms</p>
-      <p>(coming soon im stupid)</p>
+<div class="section">
+    <h3>Socials</h3>
+    <div class="social-icons-container">
+      <a href="https://twitch.tv/obvvexi" target="_blank" class="social-icons">
+        <i class="fab fa-twitch"></i>
+      </a>
+      <a href="https://tiktok.com/@obvvexi" target="_blank" class="social-icons">
+        <i class="fab fa-tiktok"></i>
+      </a>
     </div>
-  </div>
-</body>
+  </div> </div> </body>
 </html>
