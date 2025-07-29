@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Vexi</title>
   <link rel="icon" type="image/gif" href="Vexigif.gif" />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
- <style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
     html {
       height: 100%;
     }
@@ -54,16 +54,16 @@
       position: relative;
       text-align: center;
       padding-top: 10px;
-      padding-bottom: 6rem; 
+      padding-bottom: 6rem;
     }
 
     .profile-pic {
       position: absolute;
-      top: 35%; 
+      top: 35%;
       left: 50%;
-      transform: translate(calc(-50% - 130px), -50%); 
-      width: 90px; 
-      height: 90px; 
+      transform: translate(calc(-50% - 130px), -50%);
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid var(--text-color);
@@ -80,33 +80,34 @@
     }
 
     .social-icons {
-      color: var(--text-color); 
-      text-decoration: none;    
+      color: var(--text-color);
+      text-decoration: none;
       font-size: 48px;
       transition: all 0.4s ease-out;
     }
-    
+
     .social-icons-container {
-      display: flex;             
-      justify-content: center;  
-      align-items: center;      
-      gap: 25px;                 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
       margin-top: 15px;
-      width: 100%    
+      width: 100%
     }
-    .social-icon .fab { 
-    color: var(--text-color); 
-    transition: color 0.4s ease-in-out; 
+
+    .social-icon .fab {
+      color: var(--text-color);
+      transition: color 0.4s ease-in-out;
     }
 
     .social-icon .fa-twitch:hover {
-      color: #9147FF; 
-      transform: scale(1.0); 
+      color: #9147FF;
+      transform: scale(1.0);
     }
 
     .social-icon .fa-tiktok:hover {
-      color: #69C9D0; 
-      transform: scale(1.0); 
+      color: #69C9D0;
+      transform: scale(1.0);
     }
 
     @media (max-width: 600px) {
@@ -115,7 +116,7 @@
         padding-top: 10px;
         padding-left: 10px;
         padding-right: 10px;
-        padding-bottom: 2rem; 
+        padding-bottom: 2rem;
       }
 
       .profile-pic {
@@ -135,6 +136,37 @@
         text-align: center;
         margin: 0;
       }
+    }
+
+    /* --- Discord Embed Style --- */
+    .discord-embed {
+      background-color: #2f3136;
+      border-left: 4px solid #5865f2;
+      color: white;
+      padding: 16px;
+      max-width: 100%;
+      border-radius: 8px;
+      font-family: 'Segoe UI', sans-serif;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      margin-top: 1rem;
+    }
+
+    .embed-header {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .embed-description {
+      font-size: 14px;
+      margin-bottom: 12px;
+      color: #ddd;
+    }
+
+    .embed-image {
+      width: 100%;
+      border-radius: 4px;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -159,15 +191,32 @@
         <li> love using chatGPT for stupid projects like this </li>
       </ul>
     </div>
-<div class="section">
-    <h3>Socials</h3>
-    <div class="social-icons-container">
-      <a href="https://twitch.tv/obvvexi" target="_blank" class="social-icons">
-        <i class="fab fa-twitch"></i>
-      </a>
-      <a href="https://tiktok.com/@obvvexi" target="_blank" class="social-icons">
-        <i class="fab fa-tiktok"></i>
-      </a>
+
+    <div class="section">
+      <h3>Socials</h3>
+      <div class="social-icons-container">
+        <a href="https://twitch.tv/obvvexi" target="_blank" class="social-icons">
+          <i class="fab fa-twitch"></i>
+        </a>
+        <a href="https://tiktok.com/@obvvexi" target="_blank" class="social-icons">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
     </div>
-  </div> </div> </body>
+
+    <!-- Discord-Style Embed Section -->
+    <div class="section">
+      <div class="discord-embed">
+        <div class="embed-header">About Vexi</div>
+        <div class="embed-content">
+          <div class="embed-description">
+            Did you know Vexi is a professional silly goober? Here’s a peek into their vibe.
+          </div>
+          <img src="https://media.discordapp.net/attachments/000000000000000000/123456789012345678/example.png" alt="Cool Image" class="embed-image">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
 </html>
